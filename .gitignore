@@ -1,0 +1,13 @@
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Dependências
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Arquivos temporários
+*.log

@@ -1,0 +1,10 @@
+**/.env
+**/.env.*
+**/node_modules
+**/__pycache__
+**/.venv
+**/venv
+**/.git
+**/*.pyc
+**/.DS_Store
+**/testar_gemini.py
