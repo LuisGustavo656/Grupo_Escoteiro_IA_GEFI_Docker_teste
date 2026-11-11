@@ -30,4 +30,7 @@ router.put('/:id/pay', authMiddleware, authorize(['ADMIN', 'presidente', 'FINANC
 router.put('/:id', authMiddleware, authorize(financeRoles), dueController.updateDue);
 router.delete('/:id', authMiddleware, authorize(financeRoles), dueController.deleteDue);
 
+router.post('/generate-member-series', authMiddleware, authorize(financeRoles), require('./dueSeriesController').generateSixDues);
+
 module.exports = router;
+
